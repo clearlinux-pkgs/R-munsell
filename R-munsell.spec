@@ -4,16 +4,14 @@
 #
 Name     : R-munsell
 Version  : 0.4.3
-Release  : 24
+Release  : 25
 URL      : http://cran.r-project.org/src/contrib/munsell_0.4.3.tar.gz
 Source0  : http://cran.r-project.org/src/contrib/munsell_0.4.3.tar.gz
 Summary  : Utilities for Using Munsell Colours
 Group    : Development/Tools
 License  : MIT
 Requires: R-colorspace
-Requires: R-testthat
 BuildRequires : R-colorspace
-BuildRequires : R-testthat
 BuildRequires : clr-R-helpers
 
 %description
@@ -30,6 +28,8 @@ munsell
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -38,6 +38,7 @@ mkdir -p %{buildroot}/usr/lib64/R/library
 R CMD INSTALL --install-tests --build  -l %{buildroot}/usr/lib64/R/library munsell
 %{__rm} -rf %{buildroot}%{_datadir}/R/library/R.css
 %check
+export LANG=C
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost
