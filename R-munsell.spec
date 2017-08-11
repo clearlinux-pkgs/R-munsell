@@ -4,7 +4,7 @@
 #
 Name     : R-munsell
 Version  : 0.4.3
-Release  : 39
+Release  : 40
 URL      : http://cran.r-project.org/src/contrib/munsell_0.4.3.tar.gz
 Source0  : http://cran.r-project.org/src/contrib/munsell_0.4.3.tar.gz
 Summary  : Utilities for Using Munsell Colours
@@ -29,11 +29,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1502410224
+export SOURCE_DATE_EPOCH=1502412769
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1502410224
+export SOURCE_DATE_EPOCH=1502412769
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
