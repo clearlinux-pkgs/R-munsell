@@ -1,23 +1,5 @@
 # This file contains recursive sources that require this package
-R-EnvStats
-R-GGally
-R-PerformanceAnalytics
-R-SGP
-R-dendextend
-R-drc
 R-expsmooth
-R-forecast
 R-ggjoy
-R-ggplot2
-R-ggridges
-R-gridExtra
 R-haplo.stats
-R-joineRML
-R-leaflet
-R-lmerTest
-R-pheatmap
-R-plotly
-R-recipes
-R-remote
-R-rms
 R-scales
