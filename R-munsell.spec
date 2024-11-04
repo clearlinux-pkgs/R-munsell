@@ -7,7 +7,7 @@
 #
 Name     : R-munsell
 Version  : 0.5.1
-Release  : 95
+Release  : 96
 URL      : https://cran.r-project.org/src/contrib/munsell_0.5.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/munsell_0.5.1.tar.gz
 Summary  : Utilities for Using Munsell Colours
